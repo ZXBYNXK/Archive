@@ -1,0 +1,88 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+
+    
+}
+#icon {
+    
+    background-color: forestgreen;
+    width: 100%;
+    
+
+    width: 98.1%;
+    padding: 12px;
+    
+}
+#icon img {
+    width: 120px;
+    border-radius: 5px;
+    position:relative;
+    background-color: dodgerblue;
+
+
+}
+
+.demo_box {
+background-color: white;
+    position: absolute;
+}
+#result{
+    
+    font-size: 33px;
+    border-style: double;
+}
+#result div {
+    text-align: left;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: white;
+    
+    
+    margin: 10px;
+}
+#search_input_box {
+    background-color:dodgerblue;
+    width: '100%';
+  
+    position: relative;
+    text-align: center;
+   
+    font-size:"23px";
+    box-shadow: 2px 2px 2px rgb(12, 240, 12);
+}
+#search_input_box span {
+    background-color: white;
+   
+    width: 100%;
+    border-radius: 3px;
+    font-size: 26px;
+}#search_input_box input {
+   
+    width: 99%;
+  
+}
+input{
+    color: red;
+    text-align: center;
+    font-size: 24px;
+    
+}
+#app_heading{
+    color: dodgerblue;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    background-color:forestgreen;
+    border-style: double;
+    border-color:dodgerblue;
+}
+h2 {
+    color: dodgerblue;
+    font-size: 33px;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    background-color: black;
+    border-style: double;
+    border-color: forestgreen;
+    
+}
