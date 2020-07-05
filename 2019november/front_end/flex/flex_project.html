@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-color: silver;
+}
+.heading {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /*flex-wrap: nowrap;*/
+  background-color: DodgerBlue;
+
+}
+
+
+.heading > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 20px;
+  font-family: sans-serif;
+  border-radius: 5px;
+}
+
+
+.siteName {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /*flex-wrap: nowrap;*/
+  background-color: black;
+
+  padding: 15px 15px;
+ 
+   
+}
+
+
+.siteName > div {
+  color: white;
+  font-style: bold;
+  background-color: red;
+  /*width: 100%;
+  margin: 10px;*/
+  text-align: center;
+  line-height: 30px;
+  font-size: 30px;
+  font-family: monospace;
+  border-radius: 25px;
+  width: 33%;
+ 
+  
+}
+
+
+
+.mainImage {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /*flex-wrap: nowrap;*/
+  background-color: DodgerBlue;
+}
+
+
+.mainImage > div {
+  background-color: #f1f1f1;
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+  line-height: 300px;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+
+.footerImage {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /*flex-wrap: nowrap;*/
+  background-color: DodgerBlue;
+}
+
+
+.footerImage > div {
+  background-color: #f1f1f1;
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+  line-height: 300px;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+
+
+
+</style>
+
+<title>Flex-Box Assignment</title>
+</head>
+<body>
+<div class="siteName">
+    <div class="">The JavaScript Hotel</div>
+</div>
+<div class="heading">
+  <div style="flex-grow: 1; background-color: dodgerBlue; border-radius: 5px;"><img src="https://i.gifer.com/6N9b.gif" width="100%" height="75px"></div>
+  <div style="flex-grow: 1; background-color: dodgerBlue;"><button style="height: 100%; width: 100%; box-shadow: 1px 1px 0px black; font-size: 18px; border-radius: 50px;">Book Now!</button></div>
+  <div style="flex-grow: 8;"><pre style="font-size: 18px; border-radius: 5px;"><b>Hello welecome to the JavaScript Hotel! (<a href="#">About Us?</a>)</b></pre></div>  
+   
+</div>
+<br>
+<div class="mainImage">
+
+    <h2 style="background-color: white; border-radius: 5px; width: 33%; text-align: center;">Take a look at our rooms below!</h2>
+    <div><img src="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" width="100%"></div>
+   
+
+</div>
+<footer>
+<div class="footerImage">
+
+<div>The JavaScript Hotel &#169</div>
+
+</div>
+</footer>
+
+</body>
+</html>
