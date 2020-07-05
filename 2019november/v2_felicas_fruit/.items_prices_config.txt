@@ -1,0 +1,47 @@
+
+
+
+
+
+#Can put any comments you want up here.
+#If you get errors there may be spaces or newlines between the 'START' and 'END'
+#[NO SPACES!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!]
+
+======================================PUT ITEMS AND PRICES HERE===========================================
+START
+Apples 0.44
+Oranges 0.67
+Pears 0.43
+Grapes 1.25
+Blueberries 1.00
+Mangos 1.73
+Watermelon 3.00
+Bananas 1.23
+END
+===========================================================================================================
+
+#Or down here.
+#BUT NOT BETWEEN START & END also no spaces between values!
+#Example Do not do this
+ ||||     #NO SPACES IMBETWEEN! [Will fix it on next update.]
+ ||||
+\    /
+ \  /
+  \/
+------------
+apples 0.44
+(space)                <--------------------- [DONT DO THIS! NO SPACES!]
+(space)                <--------------------- [DONT DO THIS! NO SPACES!]              
+Oranges 0.67         
+(space)              <--------------------- [DONT DO THIS! NO SPACES!]       
+Pears 0.43
+Watermelon 3.00
+-----------
+
+
+
+
+
+
+
+Mangos 1.74
