@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="background-color: dodgerblue; border-style: dashed; text-align: center; border-color: white;">Behold A List Of Github Users</h1>
+    <hr>
+    
+    <button id='button' style="position: relative; left: 44%;">
+"List Users"
+    </button>
+    <hr>
+    <div id='users'></div>
+    <script>
+     //Misson list all users when button click   
+        document.getElementById('button').addEventListener('click', loadUsers)
+        function loadUsers(){
+          //1).  XHR Constructor Object
+          const Xhr = new XMLHttpRequest();
+
+          //2). Open a XHR communications channel ~ (https://...)-->it will return a JSON object.
+          Xhr.open('GET', 'https://api.github.com/users', true);
+
+          //3). Create the onload event handler for xhr
+          Xhr.onload = () => {
+            //console.log(Xhr.responseText)
+            const parsedText = JSON.parse(Xhr.responseText)
+            let users = [] 
+            let users_div = document.getElementById('users');
+            
+       
+            console.log(parsedText) 
+            users_div.style.textAlign = "center"
+            users_div.style.backgroundColor = "silver"
+            users_div.style.borderStyle = "double"
+            users_div.style.borderColor = "dodgerblue"
+            
+            users_div.style.fontFamily = "sans-serif"
+            
+         parsedText.forEach(objectProperty => {
+            users_div.innerHTML += `<kbd style="background-color: white; border-radius: 2px; width:75%;"><b>User ${parsedText.indexOf(objectProperty)}: ${objectProperty.login}</b></kbd> <br>`
+            users_div.innerHTML += `<hr>`
+        
+
+            })
+            
+         
+            
+        
+        }
+
+          //4). Request the data to send
+           Xhr.send()
+        }
+    
+    
+    
+    </script>
+</body>
+</html>
