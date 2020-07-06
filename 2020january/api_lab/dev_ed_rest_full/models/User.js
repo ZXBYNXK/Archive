@@ -6,39 +6,29 @@ Create a user model for mongoDB Atlas to hold in a cluster
 
 //Source: https://thinkster.io/tutorials/node-json-api/creating-the-user-model
 
+const mongoose = require("mongoose"),
+  userSchema = mongoose.Schema(
+    {
+      username: String,
 
-const mongoose = require('mongoose'),
-userSchema = mongoose.Schema({
+      email: String,
 
+      bio: String,
 
-    username: String,
+      image: String,
 
-    email: String,
+      hash: String,
 
-    bio: String,
-
-    image: String,
-
-    hash: String,
-
-    salt: String
-
-
-
-
-
-
-}, {timestamps: true});
+      salt: String,
+    },
+    { timestamps: true }
+  );
 /*
+The {timestamps: true} option creates a createdAt and updatedAt field on our models 
+that contain timestamps which will get automatically updated when our model changes.
+*/
 
-The {timestamps: true} option creates a createdAt and updatedAt field on our models that contain timestamps which will get automatically updated when our model changes.
-
-
-
-*/ 
-
-module.exports = mongoose.model('User', userSchema);
-
+module.exports = mongoose.model("User", userSchema);
 
 /*
 module.exports = mongoose.model('User', UserSchema); 

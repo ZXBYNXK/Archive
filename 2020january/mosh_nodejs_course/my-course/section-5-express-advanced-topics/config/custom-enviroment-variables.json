@@ -1,8 +1,8 @@
 {
-"db": {
-    "password":"secret_password_db"
-},
-"mail": {
-    "password":"secret_password_mail" 
-}
+  "db": {
+    "password": "secret_password_db"
+  },
+  "mail": {
+    "password": "secret_password_mail"
+  }
 }

@@ -1,20 +1,14 @@
-// NAME: Darius Rain,                                  DOCUMENT: Version1.0 Arrays ~RENTALSHOP HOMEWORK (DUE 10-24)~                              CLASS: 9evening 
+// NAME: Darius Rain,                                  DOCUMENT: Version1.0 Arrays ~RENTALSHOP HOMEWORK (DUE 10-24)~                              CLASS: 9evening
 
 //DATE:10-23-19;
 
 // BUILD BLANK ARRAYS THAT ARE READY TO TAKE VALUES FOR ANY DATA INCOMING FROM LATER ON FUNCTIONS;
-var readline = require('readline');
-var getit = require('')
+var readline = require("readline");
+var getit = require("");
 var rl = readline.createInterface({
-
-	input: process.stdin,
-	output: process.stout,
-
-
-
+  input: process.stdin,
+  output: process.stout,
 });
-
-
 
 var customerNames = [];
 
@@ -26,102 +20,51 @@ var numIdCar = [];
 var idEngineCustomer = 0;
 var idEngineCar = 0;
 
-
 // BUILD CONSTRUCTORFUNCTIONS TO ELIMINATE D.R.Y CODE, MEANING CREATE FUNCTION THAT IS REUSABLE FOR ADDING AND OR REMOVING SPECIFIC DATA TO AND FROM THE ABOVE ARRAYS.
 
+var newCar = function () {
+  numCarIdGenerator();
 
-
-
-
-
-
-
-
-
-var newCar = function() {
-   
-    numCarIdGenerator();
-    
-    let newCars = [`CAR ID#:${numIdCar} (MAKE\MODEL~COLOR~YEAR):${brand}~${color}~${year} `]
-    inLot = inLot.concat(newCars);
-}
-
-
-
-
-
-
-
+  let newCars = [
+    `CAR ID#:${numIdCar} (MAKE\MODEL~COLOR~YEAR):${brand}~${color}~${year} `,
+  ];
+  inLot = inLot.concat(newCars);
+};
 
 function numCustIdGenerator() {
-		
-    let temporaryArray = [idEngineCustomer += 1];
-    globalCustomerArray.concat(temporaryArray);
+  let temporaryArray = [(idEngineCustomer += 1)];
+  globalCustomerArray.concat(temporaryArray);
 }
-
-
-
-
 
 function numCarIdGenerator() {
-
-    numIdCar += 1;
+  numIdCar += 1;
 }
-
-
-
-
-
 
 function checkOut() {
- 
-
-    for (let i = 0; i < customers.length; i++) {
-        if (customers[i].includes(customer)) {
-            for (let j = 0; j < inLot.length; j++) {
-
-                if (inLot[j].includes(car) && inLot[j].includes(carid)) {
-
-                    let deal = [`PRICE: ${price} | DATEDUE: ${datedue}`]
-                    outLot = outLot.concat(`${customers[i]} ${deal}`, `${inLot[j]} |`)
-                    //outLot = outLot.concat(customers[i])
-                    inLot.splice(j, 1);
-                }
-
-            }
-
+  for (let i = 0; i < customers.length; i++) {
+    if (customers[i].includes(customer)) {
+      for (let j = 0; j < inLot.length; j++) {
+        if (inLot[j].includes(car) && inLot[j].includes(carid)) {
+          let deal = [`PRICE: ${price} | DATEDUE: ${datedue}`];
+          outLot = outLot.concat(`${customers[i]} ${deal}`, `${inLot[j]} |`);
+          //outLot = outLot.concat(customers[i])
+          inLot.splice(j, 1);
         }
-
+      }
     }
+  }
 }
-
-
-
 
 function returnCar(customer) {
-    this.customer = customer;
-    for (let i = 0; i < outLot.length; i++) {
-        if (outLot[i].includes(customer)) {
-            let nextIndex = i + 1;
-            inLot = inLot.concat(outLot[nextIndex]);
-            outLot.splice(i, 2);
-
-        }
+  this.customer = customer;
+  for (let i = 0; i < outLot.length; i++) {
+    if (outLot[i].includes(customer)) {
+      let nextIndex = i + 1;
+      inLot = inLot.concat(outLot[nextIndex]);
+      outLot.splice(i, 2);
     }
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*
 customerForm("Nikki Klark", "32102");
@@ -157,11 +100,7 @@ returnCar("James Arnold");
 
 */
 
-
-
-
-
-// HERE GOES A TEST TRY IT OUT 
+// HERE GOES A TEST TRY IT OUT
 /*
 console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CustomerManifest~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 console.log(customers);
@@ -180,7 +119,6 @@ console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 */
 
-
 /*
 rl.question(`Select a car and Length of Days: `, function(answer) {
 	var answers = answer.trim().split(',');
@@ -193,63 +131,19 @@ rl.question(`Select a car and Length of Days: `, function(answer) {
 })
 */
 
+var globalInput = function (question, theCallBack) {
+  rl.question(question, function (answer) {
+    rl.close();
+    theCallBack(answer);
+  });
+};
 
+var customerName = function (theCallBack) {
+  globalInput("Whats your name", theCallBack);
+  numCustIdGenerator();
+  let newCust = [
+    `CUSTOMER ID#:~${numIdCust} NAME: ${customername} LISCENCE#:~${liscnum} |`,
+  ];
 
-
-
-
-
-
-
-
-
-
-
-
-var globalInput = function(question, theCallBack) {
-	rl.question(question, function(answer) {
-		rl.close();
-		theCallBack(answer);
-		});
-	}
-	
-
-var customerName = function( theCallBack ) {
-		
-		
-		globalInput("Whats your name", theCallBack);    
-    numCustIdGenerator();
-    let newCust = [`CUSTOMER ID#:~${numIdCust} NAME: ${customername} LISCENCE#:~${liscnum} |`]
-
-    customers = customers.concat(newCust);
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  customers = customers.concat(newCust);
+};
