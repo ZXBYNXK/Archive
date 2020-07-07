@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xhr-Graduates</title>
+    <link rel="stylesheet" type"text/css" href="styles.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+  <form id="graduate_form" name="graduate_register">  
+    <h2>Create Granduate</h2>
+    <label for="firstname">Firstname</label>
+    <input id="firstname" required/>
+    <hr>
+    <label for="lastname">Lastname</label>
+    <input id="lastname" required/>
+    <hr>
+    <label for="email">Email</label>
+    <input id="email" type="email" required/>
+    <hr>
+    <button type="submit" onclick="createNewGraduate()" id="register_submit">Submit</button>
+    </form>
+    <form>
+    <h2>Get all graduates.</h2>
+    <button type="submit" onclick="getAllGraduates()">Show all graduates</button>
+    </form>
+
+    <table id="table_element"></table>
+</body>
+</html>

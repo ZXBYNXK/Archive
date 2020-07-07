@@ -1,0 +1,26 @@
+* {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+table, th, td {
+    border: 2px solid dodgerblue;
+    color: white;
+}
+
+table {
+    margin: 0 auto;
+    width: 50%;
+    box-shadow: 2px 0px 16px black;
+    border-radius: 3px;
+    background-color: black;
+    opacity: 0.8;
+}
+
+table:hover {
+    box-shadow: none;
+}
+
+td {
+    padding: 12px;
+}
+#graduate_form {
+    
+}
