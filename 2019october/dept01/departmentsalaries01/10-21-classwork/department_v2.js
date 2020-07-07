@@ -23,15 +23,10 @@ const departmentsGlobal = {   // <--- Created a GLOBAL OBJECT to keep everything
                 salariesOriginal = fs.readFileSync('./load_salaries.txt', 'utf8'),
                 employeesOriginal = fs.readFileSync('./load_employee.txt', 'utf8'),
                 departmentEmployeesInfoOriginal = fs.readFileSync('./load_dept_emp.txt', 'utf8'),
-                takeDataSortIt(arguments) {
+                // takeDataSortIt(arguments) {
                  
-                 }
-                
-               
-               
-               
-               
-               
+                //  }
+ 
                //console.log(salariesOriginal);
                //console.log(employeesOringinal);
                //console.log(departmentEmployeeaInfoOriginal);
@@ -42,6 +37,7 @@ const departmentsGlobal = {   // <--- Created a GLOBAL OBJECT to keep everything
        
       
 }
+
 departmentsGlobal.program.methods.sortConfigureFiles();
  /* 
 --> Down here I call a CUSTOM METHOD to LAUNCH the program 

@@ -1,0 +1,125 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+p, h3, span, header div, header, h1, h2, h4 {
+    pointer-events: none;
+}
+
+
+.flex_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 10%;
+    margin: 0;
+}
+.flex_container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 10%;
+    margin: 0;
+}
+.flex_container3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 10%;
+    margin: 0;
+}
+body{
+
+    margin: 0px;
+    background-color: #60b0f4;
+    
+}
+#jumbotron_area {
+    background-color:  #fdc794 !important;
+    width: 100%;
+    height: 100px;
+    padding: 12px;
+
+
+}
+#navigation_menu {
+    font-style: italic;
+    float: right;
+    
+}
+#search_site {
+  background-color: white;
+  padding: 20px;
+  display: none;
+}
+#search_site input {
+   
+    width: 70%;
+    position: relative;
+    left: 14.5%;
+    font-size: 15px;
+    text-align: center;
+    
+}
+#navigation_menu button {
+    background-color: #60b0f4;
+    border-radius: 3px;
+    margin-top: 5px;;
+    border-style: dashed;
+    margin-right: 12px;
+    margin-bottom: 5px;
+    width: 160px;
+    height: 50px;
+    font-size: 18px;
+    border-color: #fdc794;
+    border-width: 3px;
+   
+   
+}
+#navigation_menu :hover {
+   background-color: #fdc794;
+}
+#heading_banner{
+    width: 100%;
+    font-size: 50px;
+    color: black !important;
+    background-color: white !important;
+    
+    margin: 0;
+    box-shadow: black 0px 0px 5px;
+   
+}
+#heading_banner img{
+    float: left;
+    width: 50px;
+   
+}
+#heading_text {
+    margin: 1px;
+}
+
+
+.normal_flex_items {
+  background-color: white;
+    margin: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    box-shadow: black 1px 2px 2px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.inner_window {
+    background-color: white;
+    position: relative;
+    width: 88%;
+    align-items: center;
+}
+.flex_container2 :hover {
+    box-shadow:  #fdc794 1px 2px 2px !important;
+    margin-top: 3px;
+}

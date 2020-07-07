@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todos v0.0.1</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheet.css">
+    <script src="./scripts.js" defer></script>
+</head>
+
+<div>
+<div id="opacity_background">
+        <div class="flex_container">
+            <div id="heading_banner"> 
+               
+                <img src="images/logo.png"style="width: 150px;">
+      
+                <span id="heading_text">TO-DOOOs</span><nav id="navigation_menu">
+              
+                <button id="search_button">Show search</button>
+
+               
+            
+            </nav>
+        </div>
+        </div>
+    
+   
+    <div id="jumbotron_area" class="flex_container3">
+        <div style="text-align: center"><h3>Filter your TO-DOs? (In Progress)</h3></div>
+    <div id="search_site">
+        <input type="text" name="search" placeholder="Search">
+        </div>
+        <div id="limitless">
+        
+        </div>
+    </div>
+   
+    <br>
+    <div class="flex_container2" >
+        
+            <div class="normal_flex_items hover_me" id="create_post">
+           
+              <p>Create TO-DO?</p>
+            
+
+                </div>
+                
+                <div class="normal_flex_items hover_me" id="show_posts">
+                
+                    <p>Show TO-DOs</p>
+                    
+                </div>
+
+                    <div class="normal_flex_items hover_me" onclick="location.href='#';">
+                
+                        <p>Delete TO-DO? (In progress)</p>
+                
+                    </div>
+                
+                    <div class="normal_flex_items hover_me" onclick="location.href='#';">
+                
+                        <p>Edit TO-DO? (In Progress)</p>
+                
+                        <div class="inner_window">           
+                
+                        </div>
+                
+                    </div>
+                
+                </div>
+        
+    </div>
+    <div id="post_box">
+        <form class="new_form">
+            
+         <label for="name" >Title:</label>
+            <br>
+            <input type="text" name="name">
+         
+            <br>
+            <br>
+            <br>
+     <label for="new_post" >To do:</label>  
+            <br>
+            <textarea type="text" name="content"></textarea>
+         
+            <br>
+            <button id="post_button">Create TO-DO</button>
+        </form>
+    </div>
+
+
+<div class="flex_container3" id="all_posts">
+
+    </div>
+   </div>
+</body>
+</html>
